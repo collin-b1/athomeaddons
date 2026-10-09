@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fandango At Home Hover Info - Settings</title>
+    <style>
+      body {
+        font: 14px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif;
+        padding: 20px;
+        max-width: 480px;
+        color: #222;
+      }
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      p {
+        color: #555;
+      }
+      a {
+        color: #1565c0;
+      }
+      #status {
+        margin-top: 10px;
+        font-size: 13px;
+        color: #2e7d32;
+      }
+      button {
+        margin-top: 10px;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Fandango At Home Hover Info</h2>
+    <p>
+      Fandango/Vudu only exposes Rotten Tomatoes scores, not IMDb ratings. To show an IMDb
+      rating in the hover popup, enter a free personal API key from
+      <a href="https://www.omdbapi.com/apikey.aspx" target="_blank" rel="noopener">omdbapi.com</a>.
+      Leave blank to show Rotten Tomatoes / price only.
+    </p>
+    <label for="omdbApiKey">OMDb API key</label>
+    <input id="omdbApiKey" type="text" placeholder="e.g. a1b2c3d4" autocomplete="off" />
+    <button id="save">Save</button>
+    <div id="status"></div>
+    <script src="options.js"></script>
+  </body>
+</html>

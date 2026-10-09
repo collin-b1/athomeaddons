@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Fandango At Home Hover Info",
+  "version": "0.1.0",
+  "description": "Hover a movie or show on athome.fandango.com to see its price and IMDb/Rotten Tomatoes ratings without leaving the page.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://apicache.vudu.com/*",
+    "https://www.omdbapi.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://athome.fandango.com/*"],
+      "js": ["vudu-api.js", "omdb-api.js", "content.js"],
+      "css": ["popup.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fandango-at-home-hover-info@athomeaddons.local",
+      "strict_min_version": "109.0"
+    }
+  }
+}
