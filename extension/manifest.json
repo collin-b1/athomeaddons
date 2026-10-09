@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Fandango At Home Hover Info",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Hover a movie or show on athome.fandango.com to see its price and IMDb/Rotten Tomatoes ratings without leaving the page.",
   "permissions": ["storage"],
   "host_permissions": [
