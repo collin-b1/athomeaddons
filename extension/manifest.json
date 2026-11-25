@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Fandango At Home Hover Info",
-  "version": "1.0.0",
-  "description": "Hover a movie or show on athome.fandango.com to see its price and IMDb/Rotten Tomatoes ratings without leaving the page.",
+  "name": "Fandango At Home & FanFlix Hover Info",
+  "version": "1.1.0",
+  "description": "Hover a movie or show on athome.fandango.com or fanflix.co to see its price and IMDb/Rotten Tomatoes ratings without leaving the page.",
   "permissions": ["storage"],
   "host_permissions": [
     "https://apicache.vudu.com/*",
@@ -12,6 +12,12 @@
     {
       "matches": ["https://athome.fandango.com/*"],
       "js": ["vudu-api.js", "omdb-api.js", "content.js"],
+      "css": ["popup.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://fanflix.co/*"],
+      "js": ["fanflix-api.js", "omdb-api.js", "fanflix-content.js"],
       "css": ["popup.css"],
       "run_at": "document_idle"
     }

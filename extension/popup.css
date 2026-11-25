@@ -70,3 +70,33 @@
   color: #f5c518;
   font-weight: 600;
 }
+
+.afx-quality {
+  display: inline-block;
+  background: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+.afx-tag {
+  display: inline-block;
+  background: #f5c518;
+  color: #121212;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.afx-synopsis {
+  color: #d6d6d6;
+}
+
+.afx-providers {
+  color: #9a9a9a;
+  font-size: 11px;
+}
